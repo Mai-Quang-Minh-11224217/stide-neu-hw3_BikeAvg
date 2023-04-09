@@ -1,13 +1,14 @@
-/******************************************************************************
-Copy đoạn code vào file này
-**Lưu ý không đổi tên file hoặc định dạng file
-**Nộp thành công sẽ có tích xanh ở ngoài repository
-*******************************************************************************/
 #include <stdio.h>
 
 int main()
 {
-    printf("Hello World");
-
+    int distance;
+    float fuel, consumption;
+    printf("Enter the distance travelled (in km): ");
+    scanf("%d", &distance);
+    printf("Enter the amount of fuel consumed (in litres): ");
+    scanf("%f", &fuel);
+    consumption = (fuel / distance) * 100;
+    printf("Average fuel consumption: %.2f litres/100km", consumption);
     return 0;
 }
